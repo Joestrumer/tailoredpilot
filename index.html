@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailoredPilot — On automatise ce qui vous ralentit</title>
+  <meta name="description" content="TailoredPilot conçoit des outils d'automatisation sur mesure pour les PME. Audit gratuit, développement rapide, connecté à votre existant.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#9670;</span> TailoredPilot
+      </a>
+      <div class="nav-links">
+        <a href="#methode">Méthode</a>
+        <a href="#cas">Cas d'usage</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#contact" class="btn btn-sm">Audit gratuit</a>
+      </div>
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">Automatisation sur mesure pour PME</div>
+      <h1>On automatise<br>ce qui vous <span class="highlight">ralentit</span></h1>
+      <p class="hero-sub">
+        Vos équipes perdent du temps sur des tâches répétitives, de la saisie manuelle, des relances oubliées.
+        On identifie ces blocages et on construit l'outil qui les supprime — connecté à votre existant.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-lg">Demander un audit gratuit</a>
+        <a href="#methode" class="btn btn-lg btn-ghost">Comment ça marche</a>
+      </div>
+      <div class="hero-proof">
+        <div class="proof-item">
+          <strong>50+</strong>
+          <span>processus automatisés</span>
+        </div>
+        <div class="proof-sep"></div>
+        <div class="proof-item">
+          <strong>10h+</strong>
+          <span>gagnées par semaine / client</span>
+        </div>
+        <div class="proof-sep"></div>
+        <div class="proof-item">
+          <strong>0</strong>
+          <span>erreur de ressaisie</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Problème -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Le problème qu'on résout</h2>
+        <p>Dans chaque PME, des heures qualifiées sont absorbées par des tâches qui suivent des règles claires et pourraient être automatisées.</p>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">&#128337;</div>
+          <h3>Tâches chronophages</h3>
+          <p>Copier-coller entre outils, relances manuelles, saisie en double, exports Excel... Vos équipes font le travail d'un robot.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">&#9888;&#65039;</div>
+          <h3>Erreurs humaines</h3>
+          <p>Une ligne oubliée, un email pas envoyé, un montant mal reporté. Plus le volume augmente, plus les erreurs coûtent cher.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">&#128275;</div>
+          <h3>Outils déconnectés</h3>
+          <p>CRM, facturation, emails, sheets... Chaque outil a ses données, rien ne communique. L'information est fragmentée.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">&#128200;</div>
+          <h3>Croissance bloquée</h3>
+          <p>Impossible de scaler sans recruter. Les process manuels deviennent le goulot d'étranglement de votre croissance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Méthode -->
+  <section id="methode" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Notre méthode</h2>
+        <p>3 étapes. Pas de cahier des charges de 50 pages. On va vite, on livre un outil qui marche.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Audit</h3>
+            <div class="step-tag">Gratuit — 1h</div>
+            <p>On passe en revue vos process : quelles tâches reviennent souvent, suivent des règles claires, consomment du temps qualifié ou provoquent des erreurs. On identifie les quick wins et les gros chantiers.</p>
+            <ul>
+              <li>Cartographie de vos outils actuels</li>
+              <li>Identification des tâches automatisables</li>
+              <li>Estimation du temps récupérable</li>
+              <li>Proposition chiffrée sous 48h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Build</h3>
+            <div class="step-tag">2 à 6 semaines</div>
+            <p>On développe votre outil sur mesure. Interface simple, connecté à vos outils existants (Google Sheets, CRM, facturation, email...). Vous testez au fur et à mesure.</p>
+            <ul>
+              <li>Développement itératif avec démos régulières</li>
+              <li>Connexion à vos outils (API, imports, webhooks)</li>
+              <li>Interface web accessible depuis n'importe où</li>
+              <li>Formation de vos équipes incluse</li>
+            </ul>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Run</h3>
+            <div class="step-tag">Abonnement mensuel</div>
+            <p>On héberge, on maintient, on fait évoluer. Votre outil reste vivant : corrections, nouvelles fonctionnalités, adaptation à vos besoins qui changent.</p>
+            <ul>
+              <li>Hébergement sécurisé et sauvegardes automatiques</li>
+              <li>Support réactif et maintenance</li>
+              <li>Évolutions incluses (dans la limite du forfait)</li>
+              <li>Monitoring et alertes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cas d'usage -->
+  <section id="cas" class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ce qu'on automatise</h2>
+        <p>Chaque PME est différente. Voici les cas qu'on rencontre le plus souvent.</p>
+      </div>
+      <div class="cases-grid">
+        <div class="case-card">
+          <div class="case-icon">&#9993;</div>
+          <h3>Prospection commerciale</h3>
+          <p>Séquences d'emails automatisées, relances intelligentes, suivi des ouvertures et clics, scoring des leads.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">&#128206;</div>
+          <h3>Facturation & suivi</h3>
+          <p>Génération automatique de factures, relances de paiement, synchronisation avec votre comptabilité.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">&#128202;</div>
+          <h3>Reporting & dashboards</h3>
+          <p>Tableaux de bord en temps réel connectés à vos données. Fini les exports Excel manuels chaque lundi matin.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">&#128257;</div>
+          <h3>Synchronisation d'outils</h3>
+          <p>Connecter votre CRM, vos sheets, votre ERP, votre email. Les données circulent automatiquement.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">&#128230;</div>
+          <h3>Gestion de commandes</h3>
+          <p>Suivi des commandes, gestion des stocks, bons de livraison, notifications clients automatiques.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">&#128101;</div>
+          <h3>Onboarding & admin</h3>
+          <p>Accueil de nouveaux clients ou employés, documents à remplir, workflows de validation, checklists automatisées.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Tarifs transparents</h2>
+        <p>Pas de surprise. Un forfait de mise en place, puis un abonnement mensuel tout inclus.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-label">Setup</div>
+          <div class="pricing-price">À partir de <strong>2 000€</strong></div>
+          <p class="pricing-desc">Forfait unique de mise en place</p>
+          <ul>
+            <li>Audit et spécification</li>
+            <li>Développement sur mesure</li>
+            <li>Connexion à vos outils</li>
+            <li>Tests et recettage</li>
+            <li>Formation équipe</li>
+            <li>Mise en production</li>
+          </ul>
+          <p class="pricing-note">Le prix exact dépend de la complexité. Devis en 48h après l'audit.</p>
+        </div>
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-label">Abonnement</div>
+          <div class="pricing-price">À partir de <strong>200€</strong><span>/mois</span></div>
+          <p class="pricing-desc">Hébergement + maintenance + support</p>
+          <ul>
+            <li>Hébergement sécurisé (99.9% uptime)</li>
+            <li>Sauvegardes quotidiennes</li>
+            <li>Support par email et chat</li>
+            <li>Corrections de bugs sous 24h</li>
+            <li>Évolutions mineures incluses</li>
+            <li>Monitoring et alertes</li>
+          </ul>
+          <p class="pricing-note">Sans engagement. Vos données vous appartiennent, export à tout moment.</p>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-label">Évolutions</div>
+          <div class="pricing-price"><strong>Sur devis</strong></div>
+          <p class="pricing-desc">Nouvelles fonctionnalités majeures</p>
+          <ul>
+            <li>Nouveaux modules</li>
+            <li>Nouvelles intégrations</li>
+            <li>Refonte d'interface</li>
+            <li>Montée en charge</li>
+            <li>Priorité de développement</li>
+            <li>Accompagnement stratégique</li>
+          </ul>
+          <p class="pricing-note">Votre outil grandit avec votre entreprise. On s'adapte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Commencez par un audit gratuit</h2>
+        <p>1h pour identifier ce qui vous fait perdre du temps. Sans engagement, sans jargon technique.</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Email professionnel" required>
+          </div>
+          <div class="form-row">
+            <input type="text" name="entreprise" placeholder="Nom de l'entreprise" required>
+            <input type="tel" name="telephone" placeholder="Téléphone (optionnel)">
+          </div>
+          <textarea name="message" rows="3" placeholder="Décrivez brièvement ce qui vous prend le plus de temps au quotidien..."></textarea>
+          <button type="submit" class="btn btn-lg btn-white">Demander mon audit gratuit</button>
+        </form>
+        <p class="cta-note">On vous recontacte sous 24h pour planifier l'audit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">&#9670;</span> TailoredPilot
+        <p>Automatisation sur mesure pour PME</p>
+      </div>
+      <div class="footer-links">
+        <a href="#methode">Méthode</a>
+        <a href="#cas">Cas d'usage</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 TailoredPilot. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(this));
+
+      // Envoyer par email via mailto (solution simple sans backend)
+      const subject = encodeURIComponent(`Audit TailoredPilot — ${data.entreprise}`);
+      const body = encodeURIComponent(
+        `Nom: ${data.nom}\nEmail: ${data.email}\nEntreprise: ${data.entreprise}\nTéléphone: ${data.telephone || 'Non renseigné'}\n\nMessage:\n${data.message || 'Pas de message'}`
+      );
+      window.location.href = `mailto:contact@tailoredpilot.com?subject=${subject}&body=${body}`;
+
+      // Feedback visuel
+      this.innerHTML = '<p style="text-align:center;color:white;padding:2rem;">Merci ! Votre client mail va s\'ouvrir pour envoyer la demande.</p>';
+    });
+  </script>
+
+</body>
+</html>
