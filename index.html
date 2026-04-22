@@ -363,7 +363,9 @@
         <div class="section-tag section-tag-dark">Pret a commencer ?</div>
         <h2>Commencez par un audit gratuit</h2>
         <p>1h pour identifier ce qui vous fait perdre du temps. Sans engagement, sans jargon technique.</p>
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/VOTRE_ID" method="POST">
+          <input type="hidden" name="_subject" value="Nouvelle demande d'audit TailoredPilot">
+          <input type="text" name="_gotcha" style="display:none">
           <div class="form-row">
             <div class="form-group">
               <label>Nom</label>
@@ -495,19 +497,33 @@
       });
     });
 
-    // ── Contact form ──
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    // ── Contact form (Formspree) ──
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();
-      const data = Object.fromEntries(new FormData(this));
-      const subject = encodeURIComponent('Audit TailoredPilot - ' + data.entreprise);
-      const body = encodeURIComponent(
-        'Nom: ' + data.nom + '\nEmail: ' + data.email + '\nEntreprise: ' + data.entreprise +
-        '\nTelephone: ' + (data.telephone || 'Non renseigne') + '\n\nMessage:\n' + (data.message || 'Pas de message')
-      );
-      window.location.href = 'mailto:contact@tailoredpilot.com?subject=' + subject + '&body=' + body;
       const btn = document.getElementById('submitBtn');
-      btn.innerHTML = '<span>Merci ! Ouverture de votre messagerie...</span>';
+      const originalHTML = btn.innerHTML;
+      btn.innerHTML = '<span>Envoi en cours...</span>';
       btn.disabled = true;
+
+      try {
+        const res = await fetch(this.action, {
+          method: 'POST',
+          body: new FormData(this),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          this.innerHTML = '<div style="text-align:center;padding:32px 0"><div style="font-size:40px;margin-bottom:16px">&#10003;</div><p style="font-size:18px;font-weight:700;color:white;margin-bottom:8px">Demande envoyee !</p><p style="font-size:14px;color:#9ca3af">On vous recontacte sous 24h pour planifier votre audit.</p></div>';
+        } else {
+          btn.innerHTML = '<span>Erreur, reessayez</span>';
+          btn.disabled = false;
+          setTimeout(() => { btn.innerHTML = originalHTML; }, 3000);
+        }
+      } catch (err) {
+        btn.innerHTML = '<span>Erreur reseau, reessayez</span>';
+        btn.disabled = false;
+        setTimeout(() => { btn.innerHTML = originalHTML; }, 3000);
+      }
     });
 
     // ── Smooth anchor scroll with nav offset ──
