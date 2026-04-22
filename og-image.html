@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1200px;
+      height: 630px;
+      background: #0f0f14;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: .3;
+    }
+    .orb-1 { width: 400px; height: 400px; background: #818cf8; top: -100px; right: -50px; }
+    .orb-2 { width: 300px; height: 300px; background: #6366f1; bottom: -80px; left: -30px; }
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 0 80px;
+    }
+    .diamond {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #818cf8, #6366f1);
+      transform: rotate(45deg);
+      border-radius: 12px;
+      margin: 0 auto 32px;
+    }
+    h1 {
+      font-size: 64px;
+      font-weight: 900;
+      color: white;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 26px;
+      color: #9ca3af;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .url {
+      margin-top: 40px;
+      font-size: 18px;
+      color: #6366f1;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="content">
+    <div class="diamond"></div>
+    <h1>TailoredPilot</h1>
+    <p>On automatise ce qui vous ralentit.<br>Audit gratuit, outils sur mesure, sans engagement.</p>
+    <div class="url">tailoredpilot.com</div>
+  </div>
+</body>
+</html>
