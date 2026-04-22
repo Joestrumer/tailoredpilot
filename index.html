@@ -5,26 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TailoredPilot — On automatise ce qui vous ralentit</title>
   <meta name="description" content="TailoredPilot conçoit des outils d'automatisation sur mesure pour les PME. Audit gratuit, développement rapide, connecté à votre existant.">
+  <meta property="og:title" content="TailoredPilot — Automatisation sur mesure pour PME">
+  <meta property="og:description" content="On identifie ce qui vous fait perdre du temps et on construit l'outil qui le supprime.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9670;</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
   <!-- Nav -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="container nav-inner">
       <a href="#" class="logo">
-        <span class="logo-icon">&#9670;</span> TailoredPilot
+        <div class="logo-diamond"></div>
+        TailoredPilot
       </a>
-      <div class="nav-links">
-        <a href="#methode">Méthode</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#methode">Methode</a>
         <a href="#cas">Cas d'usage</a>
         <a href="#pricing">Tarifs</a>
-        <a href="#contact" class="btn btn-sm">Audit gratuit</a>
+        <a href="#contact" class="btn btn-sm btn-glow">Audit gratuit</a>
       </div>
-      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -32,118 +40,201 @@
 
   <!-- Hero -->
   <header class="hero">
-    <div class="container">
-      <div class="hero-badge">Automatisation sur mesure pour PME</div>
-      <h1>On automatise<br>ce qui vous <span class="highlight">ralentit</span></h1>
-      <p class="hero-sub">
-        Vos équipes perdent du temps sur des tâches répétitives, de la saisie manuelle, des relances oubliées.
-        On identifie ces blocages et on construit l'outil qui les supprime — connecté à votre existant.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-lg">Demander un audit gratuit</a>
-        <a href="#methode" class="btn btn-lg btn-ghost">Comment ça marche</a>
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Automatisation sur mesure pour PME
+        </div>
       </div>
-      <div class="hero-proof">
+      <h1 class="reveal reveal-d1">
+        On automatise<br>ce qui vous <span class="highlight">ralentit</span>
+      </h1>
+      <p class="hero-sub reveal reveal-d2">
+        Vos equipes perdent du temps sur des taches repetitives, de la saisie manuelle, des relances oubliees.
+        On identifie ces blocages et on construit l'outil qui les supprime — connecte a votre existant.
+      </p>
+      <div class="hero-actions reveal reveal-d3">
+        <a href="#contact" class="btn btn-lg btn-glow">Demander un audit gratuit</a>
+        <a href="#methode" class="btn btn-lg btn-ghost">
+          <span>Comment ca marche</span>
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+      </div>
+      <div class="hero-proof reveal reveal-d4">
         <div class="proof-item">
-          <strong>50+</strong>
-          <span>processus automatisés</span>
+          <strong class="counter" data-target="50">0</strong>
+          <span>processus automatises</span>
         </div>
         <div class="proof-sep"></div>
         <div class="proof-item">
-          <strong>10h+</strong>
-          <span>gagnées par semaine / client</span>
+          <strong class="counter" data-target="10" data-suffix="h+">0</strong>
+          <span>gagnees / semaine / client</span>
         </div>
         <div class="proof-sep"></div>
         <div class="proof-item">
-          <strong>0</strong>
+          <strong class="counter" data-target="0">0</strong>
           <span>erreur de ressaisie</span>
         </div>
       </div>
     </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
   </header>
 
-  <!-- Problème -->
+  <!-- Probleme -->
   <section class="section bg-light">
     <div class="container">
-      <div class="section-header">
-        <h2>Le problème qu'on résout</h2>
-        <p>Dans chaque PME, des heures qualifiées sont absorbées par des tâches qui suivent des règles claires et pourraient être automatisées.</p>
+      <div class="section-header anim-up">
+        <div class="section-tag">Le constat</div>
+        <h2>Le probleme qu'on resout</h2>
+        <p>Dans chaque PME, des heures qualifiees sont absorbees par des taches qui suivent des regles claires et pourraient etre automatisees.</p>
       </div>
       <div class="pain-grid">
-        <div class="pain-card">
-          <div class="pain-icon">&#128337;</div>
-          <h3>Tâches chronophages</h3>
-          <p>Copier-coller entre outils, relances manuelles, saisie en double, exports Excel... Vos équipes font le travail d'un robot.</p>
+        <div class="pain-card anim-up">
+          <div class="pain-icon-wrap"><div class="pain-icon">&#128337;</div></div>
+          <h3>Taches chronophages</h3>
+          <p>Copier-coller entre outils, relances manuelles, saisie en double, exports Excel... Vos equipes font le travail d'un robot.</p>
         </div>
-        <div class="pain-card">
-          <div class="pain-icon">&#9888;&#65039;</div>
+        <div class="pain-card anim-up anim-d1">
+          <div class="pain-icon-wrap"><div class="pain-icon">&#9888;&#65039;</div></div>
           <h3>Erreurs humaines</h3>
-          <p>Une ligne oubliée, un email pas envoyé, un montant mal reporté. Plus le volume augmente, plus les erreurs coûtent cher.</p>
+          <p>Une ligne oubliee, un email pas envoye, un montant mal reporte. Plus le volume augmente, plus les erreurs coutent cher.</p>
         </div>
-        <div class="pain-card">
-          <div class="pain-icon">&#128275;</div>
-          <h3>Outils déconnectés</h3>
-          <p>CRM, facturation, emails, sheets... Chaque outil a ses données, rien ne communique. L'information est fragmentée.</p>
+        <div class="pain-card anim-up anim-d2">
+          <div class="pain-icon-wrap"><div class="pain-icon">&#128275;</div></div>
+          <h3>Outils deconnectes</h3>
+          <p>CRM, facturation, emails, sheets... Chaque outil a ses donnees, rien ne communique. L'information est fragmentee.</p>
         </div>
-        <div class="pain-card">
-          <div class="pain-icon">&#128200;</div>
-          <h3>Croissance bloquée</h3>
-          <p>Impossible de scaler sans recruter. Les process manuels deviennent le goulot d'étranglement de votre croissance.</p>
+        <div class="pain-card anim-up anim-d3">
+          <div class="pain-icon-wrap"><div class="pain-icon">&#128200;</div></div>
+          <h3>Croissance bloquee</h3>
+          <p>Impossible de scaler sans recruter. Les process manuels deviennent le goulot d'etranglement de votre croissance.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Méthode -->
+  <!-- Methode -->
   <section id="methode" class="section">
     <div class="container">
-      <div class="section-header">
-        <h2>Notre méthode</h2>
-        <p>3 étapes. Pas de cahier des charges de 50 pages. On va vite, on livre un outil qui marche.</p>
+      <div class="section-header anim-up">
+        <div class="section-tag">Notre approche</div>
+        <h2>3 etapes. Zero jargon.</h2>
+        <p>Pas de cahier des charges de 50 pages. On va vite, on livre un outil qui marche.</p>
       </div>
       <div class="steps">
-        <div class="step">
-          <div class="step-number">01</div>
+        <div class="step anim-up">
+          <div class="step-line"></div>
+          <div class="step-dot">
+            <div class="step-dot-inner">01</div>
+          </div>
           <div class="step-content">
-            <h3>Audit</h3>
-            <div class="step-tag">Gratuit — 1h</div>
-            <p>On passe en revue vos process : quelles tâches reviennent souvent, suivent des règles claires, consomment du temps qualifié ou provoquent des erreurs. On identifie les quick wins et les gros chantiers.</p>
-            <ul>
-              <li>Cartographie de vos outils actuels</li>
-              <li>Identification des tâches automatisables</li>
-              <li>Estimation du temps récupérable</li>
-              <li>Proposition chiffrée sous 48h</li>
-            </ul>
+            <div class="step-header">
+              <h3>Audit</h3>
+              <div class="step-tag">Gratuit — 1h</div>
+            </div>
+            <p>On passe en revue vos process : quelles taches reviennent souvent, suivent des regles claires, consomment du temps qualifie ou provoquent des erreurs.</p>
+            <div class="step-features">
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Cartographie de vos outils
+              </div>
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Taches automatisables
+              </div>
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Estimation du temps recuperable
+              </div>
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Proposition chiffree sous 48h
+              </div>
+            </div>
           </div>
         </div>
-        <div class="step">
-          <div class="step-number">02</div>
+        <div class="step anim-up anim-d1">
+          <div class="step-line"></div>
+          <div class="step-dot">
+            <div class="step-dot-inner">02</div>
+          </div>
           <div class="step-content">
-            <h3>Build</h3>
-            <div class="step-tag">2 à 6 semaines</div>
-            <p>On développe votre outil sur mesure. Interface simple, connecté à vos outils existants (Google Sheets, CRM, facturation, email...). Vous testez au fur et à mesure.</p>
-            <ul>
-              <li>Développement itératif avec démos régulières</li>
-              <li>Connexion à vos outils (API, imports, webhooks)</li>
-              <li>Interface web accessible depuis n'importe où</li>
-              <li>Formation de vos équipes incluse</li>
-            </ul>
+            <div class="step-header">
+              <h3>Build</h3>
+              <div class="step-tag">2 a 6 semaines</div>
+            </div>
+            <p>On developpe votre outil sur mesure. Interface simple, connecte a vos outils existants. Vous testez au fur et a mesure.</p>
+            <div class="step-features">
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Developpement iteratif
+              </div>
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Connexion API / webhooks
+              </div>
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Interface web responsive
+              </div>
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Formation equipe incluse
+              </div>
+            </div>
           </div>
         </div>
-        <div class="step">
-          <div class="step-number">03</div>
+        <div class="step anim-up anim-d2">
+          <div class="step-line step-line-last"></div>
+          <div class="step-dot">
+            <div class="step-dot-inner">03</div>
+          </div>
           <div class="step-content">
-            <h3>Run</h3>
-            <div class="step-tag">Abonnement mensuel</div>
-            <p>On héberge, on maintient, on fait évoluer. Votre outil reste vivant : corrections, nouvelles fonctionnalités, adaptation à vos besoins qui changent.</p>
-            <ul>
-              <li>Hébergement sécurisé et sauvegardes automatiques</li>
-              <li>Support réactif et maintenance</li>
-              <li>Évolutions incluses (dans la limite du forfait)</li>
-              <li>Monitoring et alertes</li>
-            </ul>
+            <div class="step-header">
+              <h3>Run</h3>
+              <div class="step-tag">Abonnement mensuel</div>
+            </div>
+            <p>On heberge, on maintient, on fait evoluer. Votre outil reste vivant et s'adapte a vos besoins qui changent.</p>
+            <div class="step-features">
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Hebergement securise
+              </div>
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Support reactif
+              </div>
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Evolutions incluses
+              </div>
+              <div class="step-feature">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Monitoring & alertes
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee logos / outils -->
+  <section class="marquee-section">
+    <div class="marquee-label">On connecte vos outils</div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Google Sheets</span><span>HubSpot</span><span>Brevo</span><span>Stripe</span><span>Notion</span><span>Slack</span><span>Airtable</span><span>Shopify</span><span>QuickBooks</span><span>Zapier</span><span>Salesforce</span><span>Mailchimp</span>
+        <span>Google Sheets</span><span>HubSpot</span><span>Brevo</span><span>Stripe</span><span>Notion</span><span>Slack</span><span>Airtable</span><span>Shopify</span><span>QuickBooks</span><span>Zapier</span><span>Salesforce</span><span>Mailchimp</span>
       </div>
     </div>
   </section>
@@ -151,40 +242,59 @@
   <!-- Cas d'usage -->
   <section id="cas" class="section bg-light">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header anim-up">
+        <div class="section-tag">Solutions</div>
         <h2>Ce qu'on automatise</h2>
-        <p>Chaque PME est différente. Voici les cas qu'on rencontre le plus souvent.</p>
+        <p>Chaque PME est differente. Voici les cas qu'on rencontre le plus souvent.</p>
       </div>
       <div class="cases-grid">
-        <div class="case-card">
-          <div class="case-icon">&#9993;</div>
+        <div class="case-card anim-up" data-tilt>
+          <div class="case-icon-wrap">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
           <h3>Prospection commerciale</h3>
-          <p>Séquences d'emails automatisées, relances intelligentes, suivi des ouvertures et clics, scoring des leads.</p>
+          <p>Sequences d'emails automatisees, relances intelligentes, suivi des ouvertures et clics, scoring des leads.</p>
+          <div class="case-arrow">&rarr;</div>
         </div>
-        <div class="case-card">
-          <div class="case-icon">&#128206;</div>
+        <div class="case-card anim-up anim-d1" data-tilt>
+          <div class="case-icon-wrap">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>
+          </div>
           <h3>Facturation & suivi</h3>
-          <p>Génération automatique de factures, relances de paiement, synchronisation avec votre comptabilité.</p>
+          <p>Generation automatique de factures, relances de paiement, synchronisation avec votre comptabilite.</p>
+          <div class="case-arrow">&rarr;</div>
         </div>
-        <div class="case-card">
-          <div class="case-icon">&#128202;</div>
+        <div class="case-card anim-up anim-d2" data-tilt>
+          <div class="case-icon-wrap">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
           <h3>Reporting & dashboards</h3>
-          <p>Tableaux de bord en temps réel connectés à vos données. Fini les exports Excel manuels chaque lundi matin.</p>
+          <p>Tableaux de bord en temps reel connectes a vos donnees. Fini les exports Excel manuels chaque lundi.</p>
+          <div class="case-arrow">&rarr;</div>
         </div>
-        <div class="case-card">
-          <div class="case-icon">&#128257;</div>
+        <div class="case-card anim-up anim-d3" data-tilt>
+          <div class="case-icon-wrap">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </div>
           <h3>Synchronisation d'outils</h3>
-          <p>Connecter votre CRM, vos sheets, votre ERP, votre email. Les données circulent automatiquement.</p>
+          <p>Connecter votre CRM, vos sheets, votre ERP, votre email. Les donnees circulent automatiquement.</p>
+          <div class="case-arrow">&rarr;</div>
         </div>
-        <div class="case-card">
-          <div class="case-icon">&#128230;</div>
+        <div class="case-card anim-up anim-d4" data-tilt>
+          <div class="case-icon-wrap">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          </div>
           <h3>Gestion de commandes</h3>
           <p>Suivi des commandes, gestion des stocks, bons de livraison, notifications clients automatiques.</p>
+          <div class="case-arrow">&rarr;</div>
         </div>
-        <div class="case-card">
-          <div class="case-icon">&#128101;</div>
+        <div class="case-card anim-up anim-d5" data-tilt>
+          <div class="case-icon-wrap">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
           <h3>Onboarding & admin</h3>
-          <p>Accueil de nouveaux clients ou employés, documents à remplir, workflows de validation, checklists automatisées.</p>
+          <p>Accueil de nouveaux clients ou employes, documents, workflows de validation, checklists automatisees.</p>
+          <div class="case-arrow">&rarr;</div>
         </div>
       </div>
     </div>
@@ -193,52 +303,54 @@
   <!-- Pricing -->
   <section id="pricing" class="section">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header anim-up">
+        <div class="section-tag">Investissement</div>
         <h2>Tarifs transparents</h2>
         <p>Pas de surprise. Un forfait de mise en place, puis un abonnement mensuel tout inclus.</p>
       </div>
       <div class="pricing-grid">
-        <div class="pricing-card">
+        <div class="pricing-card anim-up">
           <div class="pricing-label">Setup</div>
-          <div class="pricing-price">À partir de <strong>2 000€</strong></div>
+          <div class="pricing-price">A partir de <strong>2 000&#8364;</strong></div>
           <p class="pricing-desc">Forfait unique de mise en place</p>
           <ul>
-            <li>Audit et spécification</li>
-            <li>Développement sur mesure</li>
-            <li>Connexion à vos outils</li>
+            <li>Audit et specification</li>
+            <li>Developpement sur mesure</li>
+            <li>Connexion a vos outils</li>
             <li>Tests et recettage</li>
-            <li>Formation équipe</li>
+            <li>Formation equipe</li>
             <li>Mise en production</li>
           </ul>
-          <p class="pricing-note">Le prix exact dépend de la complexité. Devis en 48h après l'audit.</p>
+          <p class="pricing-note">Le prix exact depend de la complexite. Devis en 48h apres l'audit.</p>
         </div>
-        <div class="pricing-card pricing-featured">
+        <div class="pricing-card pricing-featured anim-up anim-d1">
+          <div class="pricing-badge">Populaire</div>
           <div class="pricing-label">Abonnement</div>
-          <div class="pricing-price">À partir de <strong>200€</strong><span>/mois</span></div>
-          <p class="pricing-desc">Hébergement + maintenance + support</p>
+          <div class="pricing-price">A partir de <strong>200&#8364;</strong><span>/mois</span></div>
+          <p class="pricing-desc">Hebergement + maintenance + support</p>
           <ul>
-            <li>Hébergement sécurisé (99.9% uptime)</li>
+            <li>Hebergement securise (99.9%)</li>
             <li>Sauvegardes quotidiennes</li>
-            <li>Support par email et chat</li>
-            <li>Corrections de bugs sous 24h</li>
-            <li>Évolutions mineures incluses</li>
+            <li>Support email et chat</li>
+            <li>Corrections sous 24h</li>
+            <li>Evolutions mineures incluses</li>
             <li>Monitoring et alertes</li>
           </ul>
-          <p class="pricing-note">Sans engagement. Vos données vous appartiennent, export à tout moment.</p>
+          <p class="pricing-note">Sans engagement. Vos donnees vous appartiennent.</p>
         </div>
-        <div class="pricing-card">
-          <div class="pricing-label">Évolutions</div>
+        <div class="pricing-card anim-up anim-d2">
+          <div class="pricing-label">Evolutions</div>
           <div class="pricing-price"><strong>Sur devis</strong></div>
-          <p class="pricing-desc">Nouvelles fonctionnalités majeures</p>
+          <p class="pricing-desc">Nouvelles fonctionnalites majeures</p>
           <ul>
             <li>Nouveaux modules</li>
-            <li>Nouvelles intégrations</li>
+            <li>Nouvelles integrations</li>
             <li>Refonte d'interface</li>
-            <li>Montée en charge</li>
-            <li>Priorité de développement</li>
-            <li>Accompagnement stratégique</li>
+            <li>Montee en charge</li>
+            <li>Priorite de developpement</li>
+            <li>Accompagnement strategique</li>
           </ul>
-          <p class="pricing-note">Votre outil grandit avec votre entreprise. On s'adapte.</p>
+          <p class="pricing-note">Votre outil grandit avec votre entreprise.</p>
         </div>
       </div>
     </div>
@@ -247,20 +359,39 @@
   <!-- CTA / Contact -->
   <section id="contact" class="section bg-dark">
     <div class="container">
-      <div class="cta-content">
+      <div class="cta-content anim-up">
+        <div class="section-tag section-tag-dark">Pret a commencer ?</div>
         <h2>Commencez par un audit gratuit</h2>
         <p>1h pour identifier ce qui vous fait perdre du temps. Sans engagement, sans jargon technique.</p>
         <form class="contact-form" id="contactForm">
           <div class="form-row">
-            <input type="text" name="nom" placeholder="Votre nom" required>
-            <input type="email" name="email" placeholder="Email professionnel" required>
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" name="nom" placeholder="Jean Dupont" required>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="jean@entreprise.com" required>
+            </div>
           </div>
           <div class="form-row">
-            <input type="text" name="entreprise" placeholder="Nom de l'entreprise" required>
-            <input type="tel" name="telephone" placeholder="Téléphone (optionnel)">
+            <div class="form-group">
+              <label>Entreprise</label>
+              <input type="text" name="entreprise" placeholder="Nom de l'entreprise" required>
+            </div>
+            <div class="form-group">
+              <label>Telephone</label>
+              <input type="tel" name="telephone" placeholder="06 12 34 56 78">
+            </div>
           </div>
-          <textarea name="message" rows="3" placeholder="Décrivez brièvement ce qui vous prend le plus de temps au quotidien..."></textarea>
-          <button type="submit" class="btn btn-lg btn-white">Demander mon audit gratuit</button>
+          <div class="form-group">
+            <label>Votre besoin</label>
+            <textarea name="message" rows="3" placeholder="Decrivez brievement ce qui vous prend le plus de temps au quotidien..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-white btn-glow" id="submitBtn">
+            <span>Demander mon audit gratuit</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
         </form>
         <p class="cta-note">On vous recontacte sous 24h pour planifier l'audit.</p>
       </div>
@@ -271,35 +402,125 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-icon">&#9670;</span> TailoredPilot
+        <div class="logo-diamond logo-diamond-sm"></div>
+        TailoredPilot
         <p>Automatisation sur mesure pour PME</p>
       </div>
       <div class="footer-links">
-        <a href="#methode">Méthode</a>
+        <a href="#methode">Methode</a>
         <a href="#cas">Cas d'usage</a>
         <a href="#pricing">Tarifs</a>
         <a href="#contact">Contact</a>
+        <a href="mentions-legales.html">Mentions legales</a>
       </div>
       <div class="footer-copy">
-        &copy; 2026 TailoredPilot. Tous droits réservés.
+        &copy; 2026 TailoredPilot. Tous droits reserves.
       </div>
     </div>
   </footer>
 
   <script>
+    // ── Scroll reveal ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.anim-up, .reveal').forEach(el => observer.observe(el));
+
+    // ── Counter animation ──
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const el = e.target;
+          const target = parseInt(el.dataset.target);
+          const suffix = el.dataset.suffix || (target > 0 ? '+' : '');
+          const duration = 2000;
+          const start = performance.now();
+
+          function update(now) {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+            const current = Math.round(target * eased);
+            el.textContent = current + (progress === 1 ? suffix : '');
+            if (progress < 1) requestAnimationFrame(update);
+          }
+          requestAnimationFrame(update);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+    // ── Nav scroll effect ──
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('nav');
+      const scrollY = window.scrollY;
+      nav.classList.toggle('nav-scrolled', scrollY > 50);
+      lastScroll = scrollY;
+    });
+
+    // ── Mobile menu ──
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+      document.getElementById('menuToggle').classList.toggle('active');
+    });
+
+    // ── Cursor glow (desktop only) ──
+    if (window.matchMedia('(pointer: fine)').matches) {
+      const glow = document.getElementById('cursorGlow');
+      document.addEventListener('mousemove', (e) => {
+        glow.style.left = e.clientX + 'px';
+        glow.style.top = e.clientY + 'px';
+        glow.style.opacity = '1';
+      });
+    }
+
+    // ── Tilt effect on cards ──
+    document.querySelectorAll('[data-tilt]').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = `perspective(800px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-4px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+
+    // ── Contact form ──
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
       const data = Object.fromEntries(new FormData(this));
-
-      // Envoyer par email via mailto (solution simple sans backend)
-      const subject = encodeURIComponent(`Audit TailoredPilot — ${data.entreprise}`);
+      const subject = encodeURIComponent('Audit TailoredPilot - ' + data.entreprise);
       const body = encodeURIComponent(
-        `Nom: ${data.nom}\nEmail: ${data.email}\nEntreprise: ${data.entreprise}\nTéléphone: ${data.telephone || 'Non renseigné'}\n\nMessage:\n${data.message || 'Pas de message'}`
+        'Nom: ' + data.nom + '\nEmail: ' + data.email + '\nEntreprise: ' + data.entreprise +
+        '\nTelephone: ' + (data.telephone || 'Non renseigne') + '\n\nMessage:\n' + (data.message || 'Pas de message')
       );
-      window.location.href = `mailto:contact@tailoredpilot.com?subject=${subject}&body=${body}`;
+      window.location.href = 'mailto:contact@tailoredpilot.com?subject=' + subject + '&body=' + body;
+      const btn = document.getElementById('submitBtn');
+      btn.innerHTML = '<span>Merci ! Ouverture de votre messagerie...</span>';
+      btn.disabled = true;
+    });
 
-      // Feedback visuel
-      this.innerHTML = '<p style="text-align:center;color:white;padding:2rem;">Merci ! Votre client mail va s\'ouvrir pour envoyer la demande.</p>';
+    // ── Smooth anchor scroll with nav offset ──
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          document.getElementById('navLinks').classList.remove('open');
+          document.getElementById('menuToggle').classList.remove('active');
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
     });
   </script>
 
