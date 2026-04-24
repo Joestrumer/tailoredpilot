@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 420" role="img" aria-labelledby="title desc">
+  <title id="title">TailoredPilot logo</title>
+  <desc id="desc">TailoredPilot wordmark with automation, interconnection and time-saving icon.</desc>
+  <defs>
+    <linearGradient id="tpGradient" x1="80" y1="210" x2="500" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6C3DF4"/>
+      <stop offset="52%" stop-color="#4A5CF6"/>
+      <stop offset="100%" stop-color="#18A7E8"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(56 40) scale(0.55)">
+    <circle cx="112" cy="205" r="29" fill="none" stroke="url(#tpGradient)" stroke-width="28"/>
+    <circle cx="80" cy="320" r="29" fill="none" stroke="url(#tpGradient)" stroke-width="28"/>
+    <circle cx="112" cy="435" r="29" fill="none" stroke="url(#tpGradient)" stroke-width="28"/>
+
+    <path d="M142 205 H205 C262 205 275 271 330 281 H398" fill="none" stroke="url(#tpGradient)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M110 320 H396" fill="none" stroke="url(#tpGradient)" stroke-width="30" stroke-linecap="round"/>
+    <path d="M142 435 H205 C262 435 275 369 330 359 H398" fill="none" stroke="url(#tpGradient)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M336 320 H468" fill="none" stroke="url(#tpGradient)" stroke-width="32" stroke-linecap="round"/>
+    <path d="M420 258 L490 320 L420 382" fill="none" stroke="url(#tpGradient)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M395 205 A134 134 0 1 1 395 435" fill="none" stroke="url(#tpGradient)" stroke-width="30" stroke-linecap="round"/>
+    <path d="M468 222 V244" fill="none" stroke="url(#tpGradient)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M548 320 H568" fill="none" stroke="url(#tpGradient)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M468 396 V418" fill="none" stroke="url(#tpGradient)" stroke-width="18" stroke-linecap="round"/>
+  </g>
+
+  <text x="405" y="270" fill="#070B28" font-family="Inter, Avenir Next, Montserrat, Arial, sans-serif" font-size="142" font-weight="800" letter-spacing="-7">TailoredPilot</text>
+</svg>
