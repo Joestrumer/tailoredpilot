@@ -43,6 +43,62 @@
     "sameAs": []
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Est-ce que ca marche avec mon outil ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. On se connecte a la plupart des outils du marche (CRM, facturation, emailing, sheets, ERP...) via leurs APIs ou des webhooks. Si votre outil n'a pas d'API, on trouve une solution alternative (import/export automatise, scraping, ou connexion via Zapier/Make)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps pour etre operationnel ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Comptez 2 a 6 semaines entre l'audit et la mise en production. Les projets simples (automatisation d'un flux) peuvent etre livres en 2 semaines. Les projets plus complexes (plateforme complete) prennent 4 a 6 semaines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Est-ce que je suis engage ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. L'audit est gratuit et sans engagement. L'abonnement mensuel est sans engagement de duree : vous pouvez arreter a tout moment. Vos donnees vous appartiennent et sont exportables."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mes donnees sont-elles securisees ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Nos serveurs sont heberges en France, conformes RGPD. Les donnees sont chiffrees en transit et au repos. On effectue des sauvegardes quotidiennes et des audits de securite reguliers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que se passe-t-il si j'ai besoin d'evolutions ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les evolutions mineures sont incluses dans l'abonnement mensuel. Pour les evolutions majeures (nouveau module, nouvelle integration), on etablit un devis sur mesure. Votre outil grandit avec votre entreprise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment se passe l'audit gratuit ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "C'est un appel d'1h en visio. On passe en revue vos outils actuels, vos process, et on identifie les taches automatisables. Sous 48h, vous recevez une proposition chiffree avec le temps recuperable estime."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -61,6 +117,7 @@
         <a href="#cas">Cas d'usage</a>
         <a href="#temoignages">Temoignages</a>
         <a href="#pricing">Tarifs</a>
+        <a href="blog/">Blog</a>
         <a href="#contact" class="btn btn-sm btn-glow">Audit gratuit</a>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu">
@@ -130,22 +187,22 @@
       </div>
       <div class="pain-grid">
         <div class="pain-card anim-up">
-          <div class="pain-icon-wrap"><div class="pain-icon">&#128337;</div></div>
+          <div class="pain-icon-wrap"><div class="pain-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div></div>
           <h3>Taches chronophages</h3>
           <p><strong>2h/jour perdues en copier-coller entre outils.</strong> Relances manuelles, saisie en double, exports Excel... Vos equipes font le travail d'un robot.</p>
         </div>
         <div class="pain-card anim-up anim-d1">
-          <div class="pain-icon-wrap"><div class="pain-icon">&#9888;&#65039;</div></div>
+          <div class="pain-icon-wrap"><div class="pain-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div></div>
           <h3>Erreurs humaines</h3>
           <p><strong>Une seule erreur de facture peut couter un client.</strong> Une ligne oubliee, un email pas envoye, un montant mal reporte. Plus le volume augmente, plus ca coute cher.</p>
         </div>
         <div class="pain-card anim-up anim-d2">
-          <div class="pain-icon-wrap"><div class="pain-icon">&#128275;</div></div>
+          <div class="pain-icon-wrap"><div class="pain-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div></div>
           <h3>Outils deconnectes</h3>
           <p><strong>5 onglets ouverts, 0 vision globale.</strong> CRM, facturation, emails, sheets... Chaque outil a ses donnees, rien ne communique. L'information est fragmentee.</p>
         </div>
         <div class="pain-card anim-up anim-d3">
-          <div class="pain-icon-wrap"><div class="pain-icon">&#128200;</div></div>
+          <div class="pain-icon-wrap"><div class="pain-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div></div>
           <h3>Croissance bloquee</h3>
           <p><strong>Recruter ou automatiser ?</strong> Le dilemme de chaque PME qui grandit. Les process manuels deviennent le goulot d'etranglement de votre croissance.</p>
         </div>
@@ -434,6 +491,93 @@
     </div>
   </section>
 
+  <!-- Trust Badges -->
+  <section class="trust-badges-section">
+    <div class="container">
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Heberge en France</span>
+        </div>
+        <div class="trust-badge">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+          <span>Conforme RGPD</span>
+        </div>
+        <div class="trust-badge">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Support &lt; 24h</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq-section">
+    <div class="container">
+      <div class="section-header anim-up">
+        <div class="section-tag">FAQ</div>
+        <h2>Questions frequentes</h2>
+        <p>Les reponses aux questions qu'on nous pose le plus souvent.</p>
+      </div>
+      <div class="faq-list anim-up">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Est-ce que ca marche avec mon outil ?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Oui. On se connecte a la plupart des outils du marche (CRM, facturation, emailing, sheets, ERP...) via leurs APIs ou des webhooks. Si votre outil n'a pas d'API, on trouve une solution alternative (import/export automatise, scraping, ou connexion via Zapier/Make).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Combien de temps pour etre operationnel ?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Comptez 2 a 6 semaines entre l'audit et la mise en production. Les projets simples (automatisation d'un flux) peuvent etre livres en 2 semaines. Les projets plus complexes (plateforme complete) prennent 4 a 6 semaines.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Est-ce que je suis engage ?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Non. L'audit est gratuit et sans engagement. L'abonnement mensuel est sans engagement de duree : vous pouvez arreter a tout moment. Vos donnees vous appartiennent et sont exportables.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Mes donnees sont-elles securisees ?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Oui. Nos serveurs sont heberges en France, conformes RGPD. Les donnees sont chiffrees en transit et au repos. On effectue des sauvegardes quotidiennes et des audits de securite reguliers.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Que se passe-t-il si j'ai besoin d'evolutions ?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Les evolutions mineures sont incluses dans l'abonnement mensuel. Pour les evolutions majeures (nouveau module, nouvelle integration), on etablit un devis sur mesure. Votre outil grandit avec votre entreprise.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Comment se passe l'audit gratuit ?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>C'est un appel d'1h en visio. On passe en revue vos outils actuels, vos process, et on identifie les taches automatisables. Sous 48h, vous recevez une proposition chiffree avec le temps recuperable estime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA / Contact -->
   <section id="contact" class="section bg-dark">
     <div class="container">
@@ -514,6 +658,7 @@
         <a href="#temoignages">Temoignages</a>
         <a href="#pricing">Tarifs</a>
         <a href="#contact">Contact</a>
+        <a href="blog/">Blog</a>
         <a href="mentions-legales.html">Mentions legales</a>
       </div>
       <div class="footer-copy">
@@ -521,6 +666,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- Sticky CTA mobile -->
+  <div class="sticky-cta">
+    <a href="#contact" class="btn btn-glow">Audit gratuit &rarr;</a>
+  </div>
 
   <script>
     // ── Scroll reveal ──
@@ -639,6 +789,34 @@
         }
       });
     });
+
+    // ── FAQ accordion ──
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('faq-open');
+        document.querySelectorAll('.faq-item.faq-open').forEach(i => i.classList.remove('faq-open'));
+        if (!isOpen) item.classList.add('faq-open');
+      });
+    });
+
+    // ── Gradient cursor effect on case-cards ──
+    if (window.matchMedia('(pointer: fine)').matches) {
+      document.querySelectorAll('.case-card').forEach(card => {
+        const glow = document.createElement('div');
+        glow.className = 'card-glow';
+        card.appendChild(glow);
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          glow.style.left = (e.clientX - rect.left) + 'px';
+          glow.style.top = (e.clientY - rect.top) + 'px';
+          glow.style.opacity = '1';
+        });
+        card.addEventListener('mouseleave', () => {
+          glow.style.opacity = '0';
+        });
+      });
+    }
   </script>
 
 </body>

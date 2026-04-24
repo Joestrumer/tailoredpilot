@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — TailoredPilot | Automatisation PME</title>
+  <meta name="description" content="Conseils, guides et retours d'experience sur l'automatisation pour PME. Gagnez du temps, reduisez les erreurs, accelerez votre croissance.">
+  <meta property="og:title" content="Blog — TailoredPilot">
+  <meta property="og:description" content="Conseils et guides sur l'automatisation pour PME.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tailoredpilot.com/blog/">
+  <meta property="og:image" content="https://tailoredpilot.com/og-image.png">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="canonical" href="https://tailoredpilot.com/blog/">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-diamond"></div>
+        TailoredPilot
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">Accueil</a>
+        <a href="../index.html#cas">Cas d'usage</a>
+        <a href="./">Blog</a>
+        <a href="../index.html#contact" class="btn btn-sm btn-glow">Audit gratuit</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <div class="container article-hero-content">
+      <div class="article-tag">Blog</div>
+      <h1>Guides et conseils pour automatiser votre PME</h1>
+      <p>Des articles concrets pour comprendre l'automatisation, eviter les pieges et maximiser votre ROI.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+        <a href="automatisation-pme-guide-complet.html" class="blog-card">
+          <div class="blog-card-tag">Guide</div>
+          <h3>Guide complet de l'automatisation pour PME</h3>
+          <p>Tout ce qu'il faut savoir avant de se lancer : principes, outils, methode et pieges a eviter.</p>
+          <div class="blog-card-meta">10 min de lecture</div>
+        </a>
+        <a href="gagner-du-temps-automatisation.html" class="blog-card">
+          <div class="blog-card-tag">Productivite</div>
+          <h3>5 taches que toute PME devrait automatiser</h3>
+          <p>Les automatisations les plus rentables a mettre en place des maintenant dans votre entreprise.</p>
+          <div class="blog-card-meta">7 min de lecture</div>
+        </a>
+        <a href="automatisation-vs-recrutement.html" class="blog-card">
+          <div class="blog-card-tag">Strategie</div>
+          <h3>Automatiser ou recruter : comment choisir</h3>
+          <p>Le dilemme de chaque PME qui grandit. On vous donne les cles pour faire le bon choix.</p>
+          <div class="blog-card-meta">8 min de lecture</div>
+        </a>
+        <a href="erreurs-automatisation-pme.html" class="blog-card">
+          <div class="blog-card-tag">Retour d'experience</div>
+          <h3>Les 5 erreurs a eviter quand on automatise</h3>
+          <p>Les pieges classiques et comment les contourner pour reussir votre projet d'automatisation.</p>
+          <div class="blog-card-meta">6 min de lecture</div>
+        </a>
+        <a href="roi-automatisation-pme.html" class="blog-card">
+          <div class="blog-card-tag">ROI</div>
+          <h3>Comment calculer le ROI de l'automatisation</h3>
+          <p>Methode concrete pour mesurer la rentabilite de vos projets d'automatisation.</p>
+          <div class="blog-card-meta">8 min de lecture</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-dark">
+    <div class="container" style="text-align:center;position:relative;z-index:1;">
+      <h2 style="font-size:clamp(28px,4vw,40px);font-weight:900;letter-spacing:-.5px;margin-bottom:16px;">Pret a automatiser ?</h2>
+      <p style="font-size:17px;color:#9ca3af;margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto;">Un audit gratuit d'1h pour identifier vos gains de temps.</p>
+      <a href="../index.html#contact" class="btn btn-lg btn-white btn-glow">Demander mon audit gratuit</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo-diamond logo-diamond-sm"></div>
+        TailoredPilot
+        <p>Automatisation sur mesure pour PME</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Accueil</a>
+        <a href="../index.html#cas">Cas d'usage</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="./">Blog</a>
+        <a href="../mentions-legales.html">Mentions legales</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 TailoredPilot. Tous droits reserves.</div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('nav-scrolled', window.scrollY > 50);
+    });
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+      document.getElementById('menuToggle').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

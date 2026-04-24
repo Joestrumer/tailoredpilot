@@ -2,42 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tailoredpilot.com/</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://tailoredpilot.com/mentions-legales.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://tailoredpilot.com/cas/automatisation-prospection-commerciale.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tailoredpilot.com/cas/automatisation-facturation-pme.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tailoredpilot.com/cas/automatisation-hotellerie.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tailoredpilot.com/cas/automatisation-e-commerce.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tailoredpilot.com/cas/automatisation-agence-immobiliere.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tailoredpilot.com/cas/automatisation-cabinet-comptable.html</loc>
-    <lastmod>2026-04-23</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tailoredpilot.com/blog/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tailoredpilot.com/blog/automatisation-pme-guide-complet.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tailoredpilot.com/blog/gagner-du-temps-automatisation.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tailoredpilot.com/blog/automatisation-vs-recrutement.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tailoredpilot.com/blog/erreurs-automatisation-pme.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tailoredpilot.com/blog/roi-automatisation-pme.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
