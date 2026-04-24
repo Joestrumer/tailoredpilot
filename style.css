@@ -130,6 +130,14 @@ ul { list-style: none; }
   align-items: center;
   gap: 10px;
 }
+.logo-img {
+  height: 32px;
+  width: auto;
+}
+.footer-logo-icon {
+  height: 24px;
+  width: auto;
+}
 .logo-diamond {
   width: 20px;
   height: 20px;
